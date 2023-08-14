@@ -1,0 +1,84 @@
+body{
+font-family: 'Ubuntu', sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin:0;
+background:#222;
+background-image: url('https://source.unsplash.com/1600x900/?weather');/*To show initial background image when the page loads 
+up*/
+background-size: cover;
+font-size:120%;
+}
+
+.card{
+    background:#000000d0;
+    padding: 2em; /*top and bottom*/
+    color: white;
+    border-radius: 30px;
+    width:100%;
+    max-width:300px;
+    margin:1em;
+}
+h1.temp{ /* To make little bit closer*/
+  margin:0;
+  margin-bottom: 0.4em;
+}
+
+.search{   /* that search bar and the button*/
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    margin:0.5em;
+    border-radius: 50%;
+    border:none;
+    height: 44px;
+    width: 44px;
+    outline:none;
+    background: #7c7c7c2b;
+    color:white;
+    cursor : pointer;
+    transition: 0.2s ease-in-out;
+
+}
+button:hover{
+    background:#7c7c7c6b;
+}
+input.search-bar{
+    border:none;
+    outline:none;
+    padding:0.4em 1em; /* top bottom and left and right */
+    border-radius:24px;
+    background:  #7c7c7c2b;
+    color:white;
+    font-family: inherit;
+    font-size: 85%;
+}
+.description{
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+  }
+  
+   /* for content:loading to make it visible we used visible style it's nothing to do with .loading class  */
+  .weather.loading:after { 
+    visibility: visible;
+    position: absolute;
+    content: "Loading...";
+    color: white;
+    top: 0;
+    left: 20px;
+  }
