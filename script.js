@@ -21,10 +21,12 @@ let weather = {
   displayWeather: function (data) {
     const { name } = data;
     const { icon, description } = data.weather[0];
-    const { temp, humidity } = data.main;
+    const { temp, humidity, feels_like } = data.main;
     const { speed } = data.wind;
     const { sunrise } = data.sys;
     const { sunset } = data.sys;
+    const { lon } = data.coord;
+    const { lat } = data.coord;
     const formattedSunrise = new Date(sunrise * 1000).toLocaleTimeString();
     const formattedSunset = new Date(sunset * 1000).toLocaleTimeString();
     //console.log(name,icon,description,temp,humidity,speed);
@@ -41,6 +43,11 @@ let weather = {
     document.querySelector(".sunrise").innerText =
       "Sunrise: " + formattedSunrise;
     document.querySelector(".sunset").innerText = "Sunset: " + formattedSunset;
+    document.querySelector(".FeelsLike").innerText =
+      "Feels like: " + feels_like;
+
+    document.querySelector(".lon").innerText = "Longitude: " + lon;
+    document.querySelector(".lat").innerText = "Lattitude: " + lat;
 
     // document.body.style.backgroundImage =
     //   "url('https://source.unsplash.com/1600x900/?" + name + "')";
