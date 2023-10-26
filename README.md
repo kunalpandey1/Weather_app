@@ -1,5 +1,5 @@
 # Weather_app
-Deployed Link on Netlify -> https://check-your-location-weather.netlify.app/
+Deployed Link on Netlify -> https://check-state-weather.netlify.app/
 
 ![image](https://github.com/kunalpandey1/Weather_app/assets/85732677/533d0ecf-c4aa-4df7-b513-ca5f25471989)
 
