@@ -6,11 +6,11 @@ align-items: center;
 height: 100vh;
 margin:0;
 background:#222;
-background-image: url('https://source.unsplash.com/1600x900/?weather');/*To show initial background image when the page loads 
-up*/
+background-image: url('weatherWallpaper.jpg');
 background-size: cover;
 font-size:120%;
 }
+
 
 .card{
     background:#000000d0;
